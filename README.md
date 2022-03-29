@@ -14,7 +14,7 @@
 
 [下载链接1](http://share.liukanshan.top/%E7%9C%8B%E5%B1%B1%E7%9A%84%E7%BD%91%E7%9B%98/Release/DeleteNotes/release.exe)
 
-[下载链接2](https://github.com/liukanshan1/DeleteNotes/releases/tag/Release)
+[下载链接2](https://github.com/liukanshan1/DeleteNotes/releases)
 
 ## 使用说明
 
