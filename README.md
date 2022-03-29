@@ -12,9 +12,11 @@
 
 ## 安装
 
-[下载链接1](http://share.liukanshan.top/%E7%9C%8B%E5%B1%B1%E7%9A%84%E7%BD%91%E7%9B%98/Release/DeleteNotes/release.exe)
+[下载链接1](https://arocyx-my.sharepoint.com/:u:/g/personal/lks_arocyx_onmicrosoft_com/EQF_4P06ZqtNiRB3D-UAda4BiM8AnU7M99p5Ax4iG_V2UQ?e=ymN6yI)
 
-[下载链接2](https://github.com/liukanshan1/DeleteNotes/releases)
+[下载链接2](http://share.liukanshan.top/%E7%9C%8B%E5%B1%B1%E7%9A%84%E7%BD%91%E7%9B%98/Release/DeleteNotes/release.exe)
+
+[Github Release](https://github.com/liukanshan1/DeleteNotes/releases)
 
 ## 使用说明
 
