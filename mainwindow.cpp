@@ -48,15 +48,29 @@ void MainWindow::deleteNote()
 std::string MainWindow::deleteLine(std::string s,bool& flag)
 {
     int i;
+    int j;
     if (!flag && (i = s.find("/*")) != -1)
     {
-        flag = true;
-        s.erase(i);
-        if (s.length()!=0)
+        if ((j = s.rfind("*/",s.length()-1)) == -1)
         {
-            return s;
+            flag = true;
+            s.erase(i);
+            if (s.length()!=0)
+            {
+                return s;
+            }
+            return "";
         }
-        return "";
+        else
+        {
+            flag = false;
+            s.erase(i,j-i+2);
+            if (s.length()!=0)
+            {
+                return s;
+            }
+            return "";
+        }
     }
     if (flag &&  s.find("*/") == std::string::npos)
     {
@@ -72,7 +86,7 @@ std::string MainWindow::deleteLine(std::string s,bool& flag)
         }
         return "";
     }
-    if ((i = s.find("//")) != -1)
+    if (((i = s.find("//"))) != -1)
     {
         s.erase(i);
         if (s.length() != 0)
