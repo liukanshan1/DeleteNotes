@@ -3,6 +3,7 @@
 #include <QTextEdit>
 #include <QRegExp>
 #include <QString>
+#include <QTextBrowser>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -10,6 +11,15 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     connect(ui->textEdit, &QTextEdit::textChanged, this, &MainWindow::deleteNote);
+    connect(ui->pasteBtn,&QPushButton::clicked,ui->textEdit,&QTextEdit::paste);
+    connect(ui->copyBtn,&QPushButton::clicked,[=](){
+                                                    ui->textBrowser->selectAll();
+                                                    ui->textBrowser->copy();
+                                                    });
+    //setWindowIcon(QIcon(":/xxx.png"));
+    QLabel* myLable = new QLabel;
+    myLable->setText(tr(" Apache License © liukanshan1 https://github.com/liukanshan1"));
+    statusBar()->addWidget(myLable);
 }
 
 MainWindow::~MainWindow()
